@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relojería Lux</title>
+
+  <style>
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0f0f0; 
+      background-color: #1c1f26; 
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    header {
+      background-color: #273142;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ebe8df; 
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    
+    nav ul {
+      background-color: #1f2733;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; 
+    }
+
+    
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #Inicio img {
+      width: 250px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .producto {
+      background-color: #222836;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .producto h3 {
+      margin-top: 15px;
+      font-size: 1.3em;
+      color: #ffd700;
+    }
+
+    .producto p {
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    /* ======= NOSOTROS ======= */
+    #Nosotros p {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+
+    #Nosotros iframe {
+      max-width: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+
+    
+    .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .icono-redes {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .icono-redes:hover {
+      transform: scale(1.1);
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #273142;
+      color: #f0f0f0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <header>
+    <h1>Relojería Lux</h1>
+    <p>Descubra la esencia del tiempo con Lux, donde el lujo y la precisión convergen en relojes únicos que definen estilo y distinción.</p>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#Inicio">Inicio</a></li>
+      <li><a href="#Producto">Producto</a></li>
+      <li><a href="#Nosotros">Sobre Nosotros</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Inicio -->
+  <section id="Inicio">
+    <h2>Bienvenidos a Relojería Lux</h2>
+    <p>Lux precisión suiza, elegancia eterna</p>
+    <img src="IMG/Logo.jpg" alt="Relojería Lux">
+  </section>
+
+  <!-- Productos -->
+  <section id="Producto">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="IMG/Quartz Men's Waterproof Watch Multi-function - Rose Golden Green.jpeg" alt="Rolex">
+        <h3>Rolex</h3>
+        <p>Calidad suiza con un diseño clásico que define el lujo en cada segundo.</p>
+      </div>
+      <div class="producto">
+        <img src="IMG/descargar (1).jpeg" alt="Day-Date">
+        <h3>Day-Date</h3>
+        <p>Elegancia diaria con precisión excepcional y estilo icónico.</p>
+      </div>
+      <div class="producto">
+        <img src="IMG/descargar (2).jpeg" alt="Sky-Dweller">
+        <h3>Sky-Dweller</h3>
+        <p>Complicación técnica para viajeros con gusto refinado.</p>
+      </div>
+      <div class="producto">
+        <img src="IMG/descargar.jpeg" alt="Submariner">
+        <h3>Submariner</h3>
+        <p>Un ícono de robustez, diseñado para aventuras bajo el agua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="Nosotros">
+    <h2>Quiénes somos</h2>
+    <p>"En cada tic y cada tac, nuestros relojes celebran la precisión, el arte y la elegancia. Porque el verdadero lujo no se mide en segundos, sino en momentos eternos."</p>
+    <iframe width="648" height="365" src="https://www.youtube.com/embed/symdOinxIHs"
+      title="RELOJERÍA DE LUJO" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <!-- Contacto -->
+  <section id="Contacto">
+    <h2>Contáctanos</h2>
+    <p>Para más información o realizar un pedido, contáctanos en nuestras redes sociales:</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/relojeria.lux/?locale=es_LA" target="_blank" aria-label="Facebook">
+        <img src="IMG/Free Facebook.jpeg" alt="Facebook" class="icono-redes">
+      </a>
+      <a href="https://www.instagram.com/lux_rac/?locale=id&hl=en" target="_blank" aria-label="Instagram">
+        <img src="IMG/Instagram.jpeg" alt="Instagram" class="icono-redes">
+      </a>
+      <a href="https://www.tiktok.com/@dluxeryhn/video/7476621235879677239" target="_blank" aria-label="TikTok">
+        <img src="IMG/Tik Tok Logo.jpeg" alt="TikTok" class="icono-redes">
+      </a>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2025 Relojería Lux</p>
+  </footer>
+
+</body>
+</html>
